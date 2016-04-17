@@ -1,4 +1,7 @@
-﻿using Abp.EntityFramework;
+﻿using System.Data.Common;
+using System.Data.Entity;
+using Abp.EntityFramework;
+using VRart.Uploads;
 
 namespace VRart.EntityFramework
 {
@@ -8,6 +11,8 @@ namespace VRart.EntityFramework
 
         //Example:
         //public virtual IDbSet<User> Users { get; set; }
+        public virtual IDbSet<Upload> Uploads { get; set; }
+
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
@@ -29,5 +34,6 @@ namespace VRart.EntityFramework
         {
 
         }
+
     }
 }

@@ -95,8 +95,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityFramework\Repositories\UploadRepository.cs" />
     <Compile Include="EntityFramework\VRartDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\VRartRepositoryBase.cs" />
+    <Compile Include="Migrations\201604170004594_InitailCreate.cs" />
+    <Compile Include="Migrations\201604170004594_InitailCreate.Designer.cs">
+      <DependentUpon>201604170004594_InitailCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="VRartDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +115,11 @@
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>VRart.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604170004594_InitailCreate.resx">
+      <DependentUpon>201604170004594_InitailCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

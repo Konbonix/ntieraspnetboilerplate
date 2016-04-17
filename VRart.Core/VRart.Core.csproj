@@ -79,6 +79,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Uploads\IUploadRepository.cs" />
+    <Compile Include="Uploads\Upload.cs" />
     <Compile Include="VRartConsts.cs" />
     <Compile Include="VRartCoreModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
