@@ -87,6 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Uploads\IUploadAppService.cs" />
     <Compile Include="VRartApplicationModule.cs" />
     <Compile Include="VRartAppServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
